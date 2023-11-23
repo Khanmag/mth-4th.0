@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,19 +22,21 @@
             /* top & bottom    right & left */
             /* padding: 40px; */
         }
+
         /* span { */
-            /* display: block; */
-            /* width: 200px; */
-            /* background-color: aqua; */
+        /* display: block; */
+        /* width: 200px; */
+        /* background-color: aqua; */
         /* } */
         /* .inactive_element { */
-            /* display: none; */
+        /* display: none; */
         /* } */
         main {
-            height: calc(100vh - 50px);
-            /* height: 100vh; */
+            /* height: calc(100vh - 50px); */
+            height: 100vh;
             background-color: lightgray;
         }
+
         section {
             /* position: relative; */
             /* right: 50px; */
@@ -42,20 +45,45 @@
             background-color: lightcoral;
             margin: 0 auto;
         }
+
         article {
-            width: 50px;
-            height: 50px;
+            width: 180px;
+            height: 80px;
             background-color: black;
+            background-color: white;
             /* position: static; */
-            /* position: relative; */
+            position: relative;
             /* position: absolute; */
             /* position: fixed; */
             /* position: sticky; */
             /* right: calc(50vw - 200px); */
             /* right: 25px; */
-            top: 20px;
+
+            /* top: calc(50% - 25px);
+            right: calc(50% - 25px); */
+            /* top: 10px; */
+            /* right: 10px; */
+            /* bottom: 10px; */
+            /* left: 10px; */
+
+            /* position: relative; */
+            /* top: calc(50% - 75px); right*/ 
+            /* left: calc(50% - 25px); right*/
+
+            /* top: 50%; половина размера родителя */
+            /* top: calc(); половина собственного размера */
             /* z-index: 3; */
+            padding: 20px;
         }
+        article::before {
+            content: '=';
+            position: relative;
+            right: 10px;
+            /* position: absolute; */
+            /* top: 0; */
+            /* right: 0; */
+        }
+
         div {
             /* position: relative; */
             /* z-index: 5; */
@@ -64,37 +92,45 @@
             height: 60px;
             background-color: lightgreen;
         }
+
         /* div:nth-child(1) {
             transform: translate(20px);
         } */
-        header {
-            /* width: 100%; */
+        /* header {
+            width: 100%;
             background-color: white;
             position: sticky;
             top: 0;
             height: 50px;
-        }
+        } */
     </style>
 </head>
+
 <body>
     <!-- <div>DIV</div> -->
     <!-- <div>DIV</div> -->
     <!-- <div>DIV</div> -->
     <!-- <span>SPAN</span> -->
     <!-- <span>SPAN</span> -->
-    <header>
+    <!-- <header>
         <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contacts</a>
         </nav>
-    </header>
+    </header> -->
     <main>
         <section>
             <div></div>
-            <article></article>
+            <article>
+                <!-- ARTICLE -->
+                <!-- <p>30.56</p>
+                <span>30.56</span> -->
+                30.56
+            </article>
             <!-- <div></div> -->
         </section>
     </main>
 </body>
+
 </html>
