@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+    height: 1000vh;
+    /* background-color: lightcoral; */
+    
+}
+
+article {
+    /* Данное действие бессмыслено, артикл и так блочный элемент */
+    display: block; 
+    width: 50%;
+    height: 50%;
+    /* background-color: lightblue; */
+    margin: 0 auto;
+
+}
+
+div {
+    display: inline-block;
+    /* Чтобы высота и ширина элементов были с учётом обводки */
+    /* следует добавить следующее свойство */
+    box-sizing: border-box;
+    width: 180px;
+    height: 180px;
+    border: 5px solid gray;
+    padding: 50px 40px;
+    margin: 15px;
+}
+
+div:nth-child(3) {
+    /* Чтобы сместить в правый верхний угол страницы нужно использовать */
+    /* position absolute, он обратиться к ближайшему позиционированному */
+    /* предку. Это будет body, тк артиклу мы позиционирование не дали*/
+    /* position: relative; */
+    /* top: -42.2px; */
+    /* left: calc(100% - 250px); */
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* Так же можем отключить ему отступы, чтобы он прилегал к краям */
+    margin: 0;
+}
+
+div:nth-child(5) {
+    position: sticky;
+    top: 15px;
+}
+
+div:nth-child(7) {
+    position: relative;
+    transform: translateY(-20px);
+}
+
+
+/* feedback */
+/* Отлично выполненное задание, помимо 5го элемента всё замечательно */

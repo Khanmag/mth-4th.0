@@ -1,0 +1,47 @@
+section>div {
+    min-width: 50px;
+    min-height: 50px;
+    background-color: orange;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+ 
+section {
+    margin: 30px auto;
+    display: flex;
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    flex-direction: row-reverse;
+    
+}
+
+section>section{
+    flex-direction: column-reverse;
+    width: 250px;
+    margin-left: 5px;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+
+    
+}
+
+.block3{
+    align-self: flex-start;
+}
+
+.block8{
+    order: 2;
+    align-self: flex-start;
+}
+
+.block9{
+    order: 1;
+    align-self: stretch;
+}
+
+.block10{
+    order: 3;
+    align-self: flex-end;
+}

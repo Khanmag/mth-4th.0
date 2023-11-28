@@ -18,6 +18,8 @@ div:nth-child(7) {
 }
 
 div:nth-child(3) {
+  /* Необходимо закрепить элемент относительно страницы */
+  /* fixed работает относительно экрана, лучше использовать absolute */
   position: fixed;
   top: 0;
   right: 0;
@@ -27,4 +29,6 @@ div:nth-child(5) {
   position: sticky;
   top: 0;
 }
+/* feedback */
+/* Замечательно выполненное задание */
 
