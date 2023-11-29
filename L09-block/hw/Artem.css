@@ -23,7 +23,6 @@ div{
     height:180px; 
 }
 div:nth-child(7){
-    background-color: red;
     position: relative;
     top: -20px;
 }
