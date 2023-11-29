@@ -54,10 +54,7 @@ align-self: flex-end;
 order: 1;
 }
 
-div:nth-child(9)
-{
-    
-}
+
 div:nth-child(10)
 {
 align-self: flex-start;
