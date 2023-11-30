@@ -12,7 +12,7 @@ section
     div 
     {
         min-width: 50px;
-        min-height: 50px;
+        min-height: 51px;
         background-color: orange;
         border: 1px solid black;
         margin: 5px;
