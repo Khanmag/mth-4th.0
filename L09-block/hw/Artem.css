@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    article{
+
+        position: relative;
+        width: 50%;
+        height: 1000vh;
+        background-color: rgb(220, 245, 226);
+        margin: 0 auto;
+    }
+div{
+    position:relative;
+    display: inline-block;
+    border: 5px solid #caccd1;
+    padding: 15px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    width: 180px;
+    height:180px; 
+}
+div:nth-child(7){
+    position: relative;
+    top: -20px;
+}
+div:nth-child(3){
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+div:nth-child(5){
+    position: sticky;
+    top: 0;
+    background-color: #34bf49;
+
+}
